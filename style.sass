@@ -3,7 +3,6 @@ header
   background-color: red
 
 
-
 nav
   width: 100%
   height: 100px
@@ -24,14 +23,30 @@ nav
     right: 10%
     width: 50%
     height: 100%
-    ul
-      display: flex
-      justify-content: space-between
-      height: 100%
-      flex-direction: row
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    .nav-item
       position: relative
-      li
-        padding-top: 30px
+      display: block
+      padding-top: 30px
+      font-size: 36px
+      font-family: 'Titillium Web', sans-serif
+      color:  white
+      font-weight: bold
+      cursor: pointer
+      height: 70px
+      width: 130px
+      text-align: center
+      /*&:hover
+        /*background-color: #ff9f00*/
+        background-color: white
+        color: black
+        border-radius: 10px
+        border: 2px solid black
+        transition: background-color 500ms */
+
+      .nav-item_sub
         font-size: 36px
         font-family: 'Titillium Web', sans-serif
         color:  white
@@ -40,10 +55,5 @@ nav
         height: 70px
         width: 130px
         text-align: center
-        &:hover
-          /*background-color: #ff9f00*/
-          background-color: white
-          color: black
-          border-radius: 10px
-          border: 2px solid black
-          transition: background-color 500ms
+        display: none
+        position: absolute
